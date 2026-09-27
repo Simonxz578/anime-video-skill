@@ -1,0 +1,9 @@
+[
+  {"topic": "为什么夜空是黑的？", "series": "cosmos", "status": "curated_source_pack"},
+  {"topic": "如果太阳突然消失，地球什么时候才会“知道”？", "series": "physics", "status": "brief_only"},
+  {"topic": "宇宙有中心吗？", "series": "cosmos", "status": "brief_only"},
+  {"topic": "工业革命为什么首先发生在英国？", "series": "world_history", "status": "brief_only"},
+  {"topic": "安史之乱为什么成为唐朝的重要转折点？", "series": "china_history", "status": "brief_only"},
+  {"topic": "Cambridge 为什么发展成独特的学院制大学？", "series": "university_history", "status": "brief_only", "caveat": "区分 University、Colleges 和渐进的制度形成"}
+]
+

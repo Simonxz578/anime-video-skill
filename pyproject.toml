@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "anime-knowledge-video-mcp"
+version = "0.1.0"
+description = "Reference-locked anime knowledge video and romance chapter planning with MCP"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+dependencies = []
+
+[project.optional-dependencies]
+mcp = ["mcp>=1.0,<3"]
+dev = ["pytest>=8", "ruff>=0.6"]
+
+[project.scripts]
+anime-video = "anime_knowledge_video.cli:main"
+anime-video-mcp = "anime_knowledge_video.server:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+target-version = "py310"
+line-length = 100
+

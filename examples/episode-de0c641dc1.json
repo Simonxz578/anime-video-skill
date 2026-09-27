@@ -1,0 +1,18 @@
+{
+  "topic": "为什么夜空是黑的？",
+  "series": "cosmos",
+  "claims": [
+    {"claim": "如果宇宙无限古老、静止且处处有恒星，整个夜空理应明亮；这是奥伯斯佯谬。", "type": "interpretive", "source": "NASA StarChild: Why is space black?", "source_url": "https://starchild.gsfc.nasa.gov/docs/StarChild/questions/question52.html", "confidence": "high", "caveat": "这是思想实验的前提，不是现实宇宙的描述。", "visual_implication": "将无限静态宇宙画成明确标注的示意图。"},
+    {"claim": "宇宙有有限年龄，因此许多遥远天体的光还没有时间抵达我们。", "type": "definition", "source": "NASA Imagine the Universe: Cosmology", "source_url": "https://imagine.gsfc.nasa.gov/ask_astro/cosmology.html", "confidence": "high", "caveat": "不能据此断言整个宇宙空间一定有限。", "visual_implication": "用光锥和时间刻度示意；不要画成确定的宇宙边界。"},
+    {"claim": "宇宙膨胀使远方光发生红移，部分光不再落在可见光范围。", "type": "interpretive", "source": "NASA LAMBDA: Olbers Paradox", "source_url": "https://lambda.gsfc.nasa.gov/product/websites/POLAR/cmb.physics.wisc.edu/tutorial/olbers.html", "confidence": "high", "caveat": "夜空黑暗有多个相关原因，不应只归因于红移。", "visual_implication": "渐变光谱示意需标清可见光与红外。"}
+  ],
+  "script": [
+    {"purpose": "hook", "text": "抬头看夜空，你有没有想过：宇宙里那么多星星，为什么天空还是黑的？", "visual": "蓝白夜空与少量星点"},
+    {"purpose": "paradox", "text": "如果宇宙无限古老、静止，而且每个方向都有恒星，夜空本该处处明亮。", "visual": "标注为假设的无限静态宇宙示意"},
+    {"purpose": "name", "text": "这就是奥伯斯佯谬。问题不在于星光被黑暗挡住。", "visual": "假设条件逐一浮现"},
+    {"purpose": "explanation", "text": "关键是宇宙有有限的年龄。非常遥远的星光，还没来得及走到我们这里。", "visual": "光锥时间线示意"},
+    {"purpose": "nuance", "text": "宇宙还在膨胀。远方的光被拉长，有些已经移出人眼可见的范围。", "visual": "可见光到红外的光谱示意"},
+    {"purpose": "mental_model", "text": "所以夜空的黑，像一张时间地图：我们看不到的地方，不等于那里什么都没有。", "visual": "人物母版与向远方延伸的光线"},
+    {"purpose": "ending", "text": "下一次仰望星空，记得你看到的，也是光抵达这里的历史。", "visual": "人物母版，星轨缓慢移动"}
+  ]
+}

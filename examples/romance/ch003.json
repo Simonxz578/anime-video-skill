@@ -1,0 +1,438 @@
+{
+  "title": "晴天改道",
+  "dialogue": [
+    {
+      "line_id": "L001",
+      "speaker": "female",
+      "ja": "今日は電車に乗らないんです。",
+      "zh_CN": "今天我不坐电车。",
+      "emotion": "natural",
+      "subtext": "restrained",
+      "start": 2.4,
+      "end": 7.2,
+      "pause_after": 0.4,
+      "shot_id": "S01",
+      "meaning_check": "pending_human_review"
+    },
+    {
+      "line_id": "L002",
+      "speaker": "male",
+      "ja": "そうなんですか。",
+      "zh_CN": "这样啊。",
+      "emotion": "natural",
+      "subtext": "restrained",
+      "start": 14.4,
+      "end": 19.2,
+      "pause_after": 0.4,
+      "shot_id": "S02",
+      "meaning_check": "pending_human_review"
+    },
+    {
+      "line_id": "L003",
+      "speaker": "female",
+      "ja": "川沿いを歩いて帰ろうと思って。",
+      "zh_CN": "我想沿河走回去。",
+      "emotion": "natural",
+      "subtext": "restrained",
+      "start": 26.4,
+      "end": 31.2,
+      "pause_after": 0.4,
+      "shot_id": "S03",
+      "meaning_check": "pending_human_review"
+    },
+    {
+      "line_id": "L004",
+      "speaker": "male",
+      "ja": "遠回りですね。",
+      "zh_CN": "那要绕远路了。",
+      "emotion": "natural",
+      "subtext": "restrained",
+      "start": 38.4,
+      "end": 43.2,
+      "pause_after": 0.4,
+      "shot_id": "S04",
+      "meaning_check": "pending_human_review"
+    },
+    {
+      "line_id": "L005",
+      "speaker": "female",
+      "ja": "晴れた日くらいは。",
+      "zh_CN": "难得天晴嘛。",
+      "emotion": "natural",
+      "subtext": "restrained",
+      "start": 50.4,
+      "end": 55.2,
+      "pause_after": 0.4,
+      "shot_id": "S05",
+      "meaning_check": "pending_human_review"
+    },
+    {
+      "line_id": "L006",
+      "speaker": "male",
+      "ja": "もしよければ、途中まで。",
+      "zh_CN": "如果方便，我陪你走一段。",
+      "emotion": "natural",
+      "subtext": "restrained",
+      "start": 62.4,
+      "end": 67.2,
+      "pause_after": 0.4,
+      "shot_id": "S06",
+      "meaning_check": "pending_human_review"
+    },
+    {
+      "line_id": "L007",
+      "speaker": "female",
+      "ja": "いいですよ。急いでないので。",
+      "zh_CN": "好啊，我也不赶时间。",
+      "emotion": "natural",
+      "subtext": "restrained",
+      "start": 74.4,
+      "end": 79.2,
+      "pause_after": 0.4,
+      "shot_id": "S07",
+      "meaning_check": "pending_human_review"
+    },
+    {
+      "line_id": "L008",
+      "speaker": "male",
+      "ja": "あの橋、夕方はきれいです。",
+      "zh_CN": "那座桥傍晚很好看。",
+      "emotion": "natural",
+      "subtext": "restrained",
+      "start": 86.4,
+      "end": 91.2,
+      "pause_after": 0.4,
+      "shot_id": "S08",
+      "meaning_check": "pending_human_review"
+    },
+    {
+      "line_id": "L009",
+      "speaker": "female",
+      "ja": "じゃあ、橋まで案内してください。",
+      "zh_CN": "那就带我走到桥边吧。",
+      "emotion": "natural",
+      "subtext": "restrained",
+      "start": 98.4,
+      "end": 103.2,
+      "pause_after": 0.4,
+      "shot_id": "S09",
+      "meaning_check": "pending_human_review"
+    },
+    {
+      "line_id": "L010",
+      "speaker": "male",
+      "ja": "はい。今日は傘、いらないですね。",
+      "zh_CN": "好。今天用不上伞了。",
+      "emotion": "natural",
+      "subtext": "restrained",
+      "start": 110.4,
+      "end": 115.2,
+      "pause_after": 0.4,
+      "shot_id": "S10",
+      "meaning_check": "pending_human_review"
+    }
+  ],
+  "shots": [
+    {
+      "shot_id": "S01",
+      "start": 0,
+      "end": 12,
+      "composition": "chapter 3 shot 1: distinct angle at station or route",
+      "action": "晴天改道: beat 1, new blocking and camera position",
+      "dialogue_line_ids": [
+        "L001"
+      ],
+      "male_presence": true,
+      "female_presence": true,
+      "eye_line": "varies",
+      "relationship_distance": "one arm length",
+      "weather_state": "clear",
+      "time_of_day": "evening",
+      "continuity_props": [
+        "notebook",
+        "blue bench"
+      ],
+      "subtitle_safe_zone": "bottom 20%",
+      "lip_sync_requirement": false,
+      "emotion_before": "reserved",
+      "emotion_after": "slightly warmer",
+      "reference_images": [
+        "references/female_lead_master.png",
+        "references/male_lead_master.png"
+      ],
+      "generated_visuals": []
+    },
+    {
+      "shot_id": "S02",
+      "start": 12,
+      "end": 24,
+      "composition": "chapter 3 shot 2: distinct angle at station or route",
+      "action": "晴天改道: beat 2, new blocking and camera position",
+      "dialogue_line_ids": [
+        "L002"
+      ],
+      "male_presence": true,
+      "female_presence": true,
+      "eye_line": "varies",
+      "relationship_distance": "one arm length",
+      "weather_state": "clear",
+      "time_of_day": "evening",
+      "continuity_props": [
+        "notebook",
+        "blue bench"
+      ],
+      "subtitle_safe_zone": "bottom 20%",
+      "lip_sync_requirement": false,
+      "emotion_before": "reserved",
+      "emotion_after": "slightly warmer",
+      "reference_images": [
+        "references/female_lead_master.png",
+        "references/male_lead_master.png"
+      ],
+      "generated_visuals": []
+    },
+    {
+      "shot_id": "S03",
+      "start": 24,
+      "end": 36,
+      "composition": "chapter 3 shot 3: distinct angle at station or route",
+      "action": "晴天改道: beat 3, new blocking and camera position",
+      "dialogue_line_ids": [
+        "L003"
+      ],
+      "male_presence": true,
+      "female_presence": true,
+      "eye_line": "varies",
+      "relationship_distance": "one arm length",
+      "weather_state": "clear",
+      "time_of_day": "evening",
+      "continuity_props": [
+        "notebook",
+        "blue bench"
+      ],
+      "subtitle_safe_zone": "bottom 20%",
+      "lip_sync_requirement": false,
+      "emotion_before": "reserved",
+      "emotion_after": "slightly warmer",
+      "reference_images": [
+        "references/female_lead_master.png",
+        "references/male_lead_master.png"
+      ],
+      "generated_visuals": []
+    },
+    {
+      "shot_id": "S04",
+      "start": 36,
+      "end": 48,
+      "composition": "chapter 3 shot 4: distinct angle at station or route",
+      "action": "晴天改道: beat 4, new blocking and camera position",
+      "dialogue_line_ids": [
+        "L004"
+      ],
+      "male_presence": true,
+      "female_presence": true,
+      "eye_line": "varies",
+      "relationship_distance": "one arm length",
+      "weather_state": "clear",
+      "time_of_day": "evening",
+      "continuity_props": [
+        "notebook",
+        "blue bench"
+      ],
+      "subtitle_safe_zone": "bottom 20%",
+      "lip_sync_requirement": false,
+      "emotion_before": "reserved",
+      "emotion_after": "slightly warmer",
+      "reference_images": [
+        "references/female_lead_master.png",
+        "references/male_lead_master.png"
+      ],
+      "generated_visuals": []
+    },
+    {
+      "shot_id": "S05",
+      "start": 48,
+      "end": 60,
+      "composition": "chapter 3 shot 5: distinct angle at station or route",
+      "action": "晴天改道: beat 5, new blocking and camera position",
+      "dialogue_line_ids": [
+        "L005"
+      ],
+      "male_presence": true,
+      "female_presence": true,
+      "eye_line": "varies",
+      "relationship_distance": "one arm length",
+      "weather_state": "clear",
+      "time_of_day": "evening",
+      "continuity_props": [
+        "notebook",
+        "blue bench"
+      ],
+      "subtitle_safe_zone": "bottom 20%",
+      "lip_sync_requirement": false,
+      "emotion_before": "reserved",
+      "emotion_after": "slightly warmer",
+      "reference_images": [
+        "references/female_lead_master.png",
+        "references/male_lead_master.png"
+      ],
+      "generated_visuals": []
+    },
+    {
+      "shot_id": "S06",
+      "start": 60,
+      "end": 72,
+      "composition": "chapter 3 shot 6: distinct angle at station or route",
+      "action": "晴天改道: beat 6, new blocking and camera position",
+      "dialogue_line_ids": [
+        "L006"
+      ],
+      "male_presence": true,
+      "female_presence": true,
+      "eye_line": "varies",
+      "relationship_distance": "one arm length",
+      "weather_state": "clear",
+      "time_of_day": "evening",
+      "continuity_props": [
+        "notebook",
+        "blue bench"
+      ],
+      "subtitle_safe_zone": "bottom 20%",
+      "lip_sync_requirement": false,
+      "emotion_before": "reserved",
+      "emotion_after": "slightly warmer",
+      "reference_images": [
+        "references/female_lead_master.png",
+        "references/male_lead_master.png"
+      ],
+      "generated_visuals": []
+    },
+    {
+      "shot_id": "S07",
+      "start": 72,
+      "end": 84,
+      "composition": "chapter 3 shot 7: distinct angle at station or route",
+      "action": "晴天改道: beat 7, new blocking and camera position",
+      "dialogue_line_ids": [
+        "L007"
+      ],
+      "male_presence": true,
+      "female_presence": true,
+      "eye_line": "varies",
+      "relationship_distance": "one arm length",
+      "weather_state": "clear",
+      "time_of_day": "evening",
+      "continuity_props": [
+        "notebook",
+        "blue bench"
+      ],
+      "subtitle_safe_zone": "bottom 20%",
+      "lip_sync_requirement": false,
+      "emotion_before": "reserved",
+      "emotion_after": "slightly warmer",
+      "reference_images": [
+        "references/female_lead_master.png",
+        "references/male_lead_master.png"
+      ],
+      "generated_visuals": []
+    },
+    {
+      "shot_id": "S08",
+      "start": 84,
+      "end": 96,
+      "composition": "chapter 3 shot 8: distinct angle at station or route",
+      "action": "晴天改道: beat 8, new blocking and camera position",
+      "dialogue_line_ids": [
+        "L008"
+      ],
+      "male_presence": true,
+      "female_presence": true,
+      "eye_line": "varies",
+      "relationship_distance": "one arm length",
+      "weather_state": "clear",
+      "time_of_day": "evening",
+      "continuity_props": [
+        "notebook",
+        "blue bench"
+      ],
+      "subtitle_safe_zone": "bottom 20%",
+      "lip_sync_requirement": false,
+      "emotion_before": "reserved",
+      "emotion_after": "slightly warmer",
+      "reference_images": [
+        "references/female_lead_master.png",
+        "references/male_lead_master.png"
+      ],
+      "generated_visuals": []
+    },
+    {
+      "shot_id": "S09",
+      "start": 96,
+      "end": 108,
+      "composition": "chapter 3 shot 9: distinct angle at station or route",
+      "action": "晴天改道: beat 9, new blocking and camera position",
+      "dialogue_line_ids": [
+        "L009"
+      ],
+      "male_presence": true,
+      "female_presence": true,
+      "eye_line": "varies",
+      "relationship_distance": "one arm length",
+      "weather_state": "clear",
+      "time_of_day": "evening",
+      "continuity_props": [
+        "notebook",
+        "blue bench"
+      ],
+      "subtitle_safe_zone": "bottom 20%",
+      "lip_sync_requirement": false,
+      "emotion_before": "reserved",
+      "emotion_after": "slightly warmer",
+      "reference_images": [
+        "references/female_lead_master.png",
+        "references/male_lead_master.png"
+      ],
+      "generated_visuals": []
+    },
+    {
+      "shot_id": "S10",
+      "start": 108,
+      "end": 120,
+      "composition": "chapter 3 shot 10: distinct angle at station or route",
+      "action": "晴天改道: beat 10, new blocking and camera position",
+      "dialogue_line_ids": [
+        "L010"
+      ],
+      "male_presence": true,
+      "female_presence": true,
+      "eye_line": "varies",
+      "relationship_distance": "one arm length",
+      "weather_state": "clear",
+      "time_of_day": "evening",
+      "continuity_props": [
+        "notebook",
+        "blue bench"
+      ],
+      "subtitle_safe_zone": "bottom 20%",
+      "lip_sync_requirement": false,
+      "emotion_before": "reserved",
+      "emotion_after": "slightly warmer",
+      "reference_images": [
+        "references/female_lead_master.png",
+        "references/male_lead_master.png"
+      ],
+      "generated_visuals": []
+    }
+  ],
+  "state_after": {
+    "relationship": "choose_to_walk_together",
+    "known_facts": [
+      "female carries a notebook",
+      "male checks train board",
+      "both use same evening train",
+      "they chose to walk to bridge"
+    ],
+    "weather": "clear",
+    "contact_exchanged": false
+  }
+}

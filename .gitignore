@@ -1,0 +1,15 @@
+.env
+.venv/
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+*.pyc
+*.egg-info/
+node_modules/
+projects/
+outputs/
+*.mp4
+*.wav
+*.mid
+*.log
+

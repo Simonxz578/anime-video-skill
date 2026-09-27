@@ -1,0 +1,436 @@
+{
+  "title": "第一次等候",
+  "dialogue": [
+    {
+      "line_id": "L001",
+      "speaker": "female",
+      "ja": "あ、それ、私のノートです。",
+      "zh_CN": "啊，那是我的笔记本。",
+      "emotion": "natural",
+      "subtext": "restrained",
+      "start": 2.4,
+      "end": 7.2,
+      "pause_after": 0.4,
+      "shot_id": "S01",
+      "meaning_check": "pending_human_review"
+    },
+    {
+      "line_id": "L002",
+      "speaker": "male",
+      "ja": "よかった。ベンチに置いてあったから。",
+      "zh_CN": "太好了，它落在长椅上。",
+      "emotion": "natural",
+      "subtext": "restrained",
+      "start": 14.4,
+      "end": 19.2,
+      "pause_after": 0.4,
+      "shot_id": "S02",
+      "meaning_check": "pending_human_review"
+    },
+    {
+      "line_id": "L003",
+      "speaker": "female",
+      "ja": "気づかなかった。ありがとう。",
+      "zh_CN": "我没注意到，谢谢。",
+      "emotion": "natural",
+      "subtext": "restrained",
+      "start": 26.4,
+      "end": 31.2,
+      "pause_after": 0.4,
+      "shot_id": "S03",
+      "meaning_check": "pending_human_review"
+    },
+    {
+      "line_id": "L004",
+      "speaker": "male",
+      "ja": "雨、急に強くなりましたね。",
+      "zh_CN": "雨突然下大了。",
+      "emotion": "natural",
+      "subtext": "restrained",
+      "start": 38.4,
+      "end": 43.2,
+      "pause_after": 0.4,
+      "shot_id": "S04",
+      "meaning_check": "pending_human_review"
+    },
+    {
+      "line_id": "L005",
+      "speaker": "female",
+      "ja": "この駅、屋根が少し短いんです。",
+      "zh_CN": "这个站的雨棚有点短。",
+      "emotion": "natural",
+      "subtext": "restrained",
+      "start": 50.4,
+      "end": 55.2,
+      "pause_after": 0.4,
+      "shot_id": "S05",
+      "meaning_check": "pending_human_review"
+    },
+    {
+      "line_id": "L006",
+      "speaker": "male",
+      "ja": "じゃあ、こっちに寄ってください。",
+      "zh_CN": "那你往这边站一点。",
+      "emotion": "natural",
+      "subtext": "restrained",
+      "start": 62.4,
+      "end": 67.2,
+      "pause_after": 0.4,
+      "shot_id": "S06",
+      "meaning_check": "pending_human_review"
+    },
+    {
+      "line_id": "L007",
+      "speaker": "female",
+      "ja": "助かります。電車、遅れてるのかな。",
+      "zh_CN": "帮大忙了。电车晚点了吗？",
+      "emotion": "natural",
+      "subtext": "restrained",
+      "start": 74.4,
+      "end": 79.2,
+      "pause_after": 0.4,
+      "shot_id": "S07",
+      "meaning_check": "pending_human_review"
+    },
+    {
+      "line_id": "L008",
+      "speaker": "male",
+      "ja": "五分だけ。表示が変わりました。",
+      "zh_CN": "只晚五分钟，牌子更新了。",
+      "emotion": "natural",
+      "subtext": "restrained",
+      "start": 86.4,
+      "end": 91.2,
+      "pause_after": 0.4,
+      "shot_id": "S08",
+      "meaning_check": "pending_human_review"
+    },
+    {
+      "line_id": "L009",
+      "speaker": "female",
+      "ja": "五分なら、ちょうどいいかも。",
+      "zh_CN": "五分钟的话，倒也刚好。",
+      "emotion": "natural",
+      "subtext": "restrained",
+      "start": 98.4,
+      "end": 103.2,
+      "pause_after": 0.4,
+      "shot_id": "S09",
+      "meaning_check": "pending_human_review"
+    },
+    {
+      "line_id": "L010",
+      "speaker": "male",
+      "ja": "あ、来ましたね。",
+      "zh_CN": "啊，车来了。",
+      "emotion": "natural",
+      "subtext": "restrained",
+      "start": 110.4,
+      "end": 115.2,
+      "pause_after": 0.4,
+      "shot_id": "S10",
+      "meaning_check": "pending_human_review"
+    }
+  ],
+  "shots": [
+    {
+      "shot_id": "S01",
+      "start": 0,
+      "end": 12,
+      "composition": "chapter 1 shot 1: distinct angle at station or route",
+      "action": "第一次等候: beat 1, new blocking and camera position",
+      "dialogue_line_ids": [
+        "L001"
+      ],
+      "male_presence": true,
+      "female_presence": true,
+      "eye_line": "varies",
+      "relationship_distance": "one arm length",
+      "weather_state": "rain",
+      "time_of_day": "evening",
+      "continuity_props": [
+        "notebook",
+        "blue bench"
+      ],
+      "subtitle_safe_zone": "bottom 20%",
+      "lip_sync_requirement": false,
+      "emotion_before": "reserved",
+      "emotion_after": "slightly warmer",
+      "reference_images": [
+        "references/female_lead_master.png",
+        "references/male_lead_master.png"
+      ],
+      "generated_visuals": []
+    },
+    {
+      "shot_id": "S02",
+      "start": 12,
+      "end": 24,
+      "composition": "chapter 1 shot 2: distinct angle at station or route",
+      "action": "第一次等候: beat 2, new blocking and camera position",
+      "dialogue_line_ids": [
+        "L002"
+      ],
+      "male_presence": true,
+      "female_presence": true,
+      "eye_line": "varies",
+      "relationship_distance": "one arm length",
+      "weather_state": "rain",
+      "time_of_day": "evening",
+      "continuity_props": [
+        "notebook",
+        "blue bench"
+      ],
+      "subtitle_safe_zone": "bottom 20%",
+      "lip_sync_requirement": false,
+      "emotion_before": "reserved",
+      "emotion_after": "slightly warmer",
+      "reference_images": [
+        "references/female_lead_master.png",
+        "references/male_lead_master.png"
+      ],
+      "generated_visuals": []
+    },
+    {
+      "shot_id": "S03",
+      "start": 24,
+      "end": 36,
+      "composition": "chapter 1 shot 3: distinct angle at station or route",
+      "action": "第一次等候: beat 3, new blocking and camera position",
+      "dialogue_line_ids": [
+        "L003"
+      ],
+      "male_presence": true,
+      "female_presence": true,
+      "eye_line": "varies",
+      "relationship_distance": "one arm length",
+      "weather_state": "rain",
+      "time_of_day": "evening",
+      "continuity_props": [
+        "notebook",
+        "blue bench"
+      ],
+      "subtitle_safe_zone": "bottom 20%",
+      "lip_sync_requirement": false,
+      "emotion_before": "reserved",
+      "emotion_after": "slightly warmer",
+      "reference_images": [
+        "references/female_lead_master.png",
+        "references/male_lead_master.png"
+      ],
+      "generated_visuals": []
+    },
+    {
+      "shot_id": "S04",
+      "start": 36,
+      "end": 48,
+      "composition": "chapter 1 shot 4: distinct angle at station or route",
+      "action": "第一次等候: beat 4, new blocking and camera position",
+      "dialogue_line_ids": [
+        "L004"
+      ],
+      "male_presence": true,
+      "female_presence": true,
+      "eye_line": "varies",
+      "relationship_distance": "one arm length",
+      "weather_state": "rain",
+      "time_of_day": "evening",
+      "continuity_props": [
+        "notebook",
+        "blue bench"
+      ],
+      "subtitle_safe_zone": "bottom 20%",
+      "lip_sync_requirement": false,
+      "emotion_before": "reserved",
+      "emotion_after": "slightly warmer",
+      "reference_images": [
+        "references/female_lead_master.png",
+        "references/male_lead_master.png"
+      ],
+      "generated_visuals": []
+    },
+    {
+      "shot_id": "S05",
+      "start": 48,
+      "end": 60,
+      "composition": "chapter 1 shot 5: distinct angle at station or route",
+      "action": "第一次等候: beat 5, new blocking and camera position",
+      "dialogue_line_ids": [
+        "L005"
+      ],
+      "male_presence": true,
+      "female_presence": true,
+      "eye_line": "varies",
+      "relationship_distance": "one arm length",
+      "weather_state": "rain",
+      "time_of_day": "evening",
+      "continuity_props": [
+        "notebook",
+        "blue bench"
+      ],
+      "subtitle_safe_zone": "bottom 20%",
+      "lip_sync_requirement": false,
+      "emotion_before": "reserved",
+      "emotion_after": "slightly warmer",
+      "reference_images": [
+        "references/female_lead_master.png",
+        "references/male_lead_master.png"
+      ],
+      "generated_visuals": []
+    },
+    {
+      "shot_id": "S06",
+      "start": 60,
+      "end": 72,
+      "composition": "chapter 1 shot 6: distinct angle at station or route",
+      "action": "第一次等候: beat 6, new blocking and camera position",
+      "dialogue_line_ids": [
+        "L006"
+      ],
+      "male_presence": true,
+      "female_presence": true,
+      "eye_line": "varies",
+      "relationship_distance": "one arm length",
+      "weather_state": "rain",
+      "time_of_day": "evening",
+      "continuity_props": [
+        "notebook",
+        "blue bench"
+      ],
+      "subtitle_safe_zone": "bottom 20%",
+      "lip_sync_requirement": false,
+      "emotion_before": "reserved",
+      "emotion_after": "slightly warmer",
+      "reference_images": [
+        "references/female_lead_master.png",
+        "references/male_lead_master.png"
+      ],
+      "generated_visuals": []
+    },
+    {
+      "shot_id": "S07",
+      "start": 72,
+      "end": 84,
+      "composition": "chapter 1 shot 7: distinct angle at station or route",
+      "action": "第一次等候: beat 7, new blocking and camera position",
+      "dialogue_line_ids": [
+        "L007"
+      ],
+      "male_presence": true,
+      "female_presence": true,
+      "eye_line": "varies",
+      "relationship_distance": "one arm length",
+      "weather_state": "rain",
+      "time_of_day": "evening",
+      "continuity_props": [
+        "notebook",
+        "blue bench"
+      ],
+      "subtitle_safe_zone": "bottom 20%",
+      "lip_sync_requirement": false,
+      "emotion_before": "reserved",
+      "emotion_after": "slightly warmer",
+      "reference_images": [
+        "references/female_lead_master.png",
+        "references/male_lead_master.png"
+      ],
+      "generated_visuals": []
+    },
+    {
+      "shot_id": "S08",
+      "start": 84,
+      "end": 96,
+      "composition": "chapter 1 shot 8: distinct angle at station or route",
+      "action": "第一次等候: beat 8, new blocking and camera position",
+      "dialogue_line_ids": [
+        "L008"
+      ],
+      "male_presence": true,
+      "female_presence": true,
+      "eye_line": "varies",
+      "relationship_distance": "one arm length",
+      "weather_state": "rain",
+      "time_of_day": "evening",
+      "continuity_props": [
+        "notebook",
+        "blue bench"
+      ],
+      "subtitle_safe_zone": "bottom 20%",
+      "lip_sync_requirement": false,
+      "emotion_before": "reserved",
+      "emotion_after": "slightly warmer",
+      "reference_images": [
+        "references/female_lead_master.png",
+        "references/male_lead_master.png"
+      ],
+      "generated_visuals": []
+    },
+    {
+      "shot_id": "S09",
+      "start": 96,
+      "end": 108,
+      "composition": "chapter 1 shot 9: distinct angle at station or route",
+      "action": "第一次等候: beat 9, new blocking and camera position",
+      "dialogue_line_ids": [
+        "L009"
+      ],
+      "male_presence": true,
+      "female_presence": true,
+      "eye_line": "varies",
+      "relationship_distance": "one arm length",
+      "weather_state": "rain",
+      "time_of_day": "evening",
+      "continuity_props": [
+        "notebook",
+        "blue bench"
+      ],
+      "subtitle_safe_zone": "bottom 20%",
+      "lip_sync_requirement": false,
+      "emotion_before": "reserved",
+      "emotion_after": "slightly warmer",
+      "reference_images": [
+        "references/female_lead_master.png",
+        "references/male_lead_master.png"
+      ],
+      "generated_visuals": []
+    },
+    {
+      "shot_id": "S10",
+      "start": 108,
+      "end": 120,
+      "composition": "chapter 1 shot 10: distinct angle at station or route",
+      "action": "第一次等候: beat 10, new blocking and camera position",
+      "dialogue_line_ids": [
+        "L010"
+      ],
+      "male_presence": true,
+      "female_presence": true,
+      "eye_line": "varies",
+      "relationship_distance": "one arm length",
+      "weather_state": "rain",
+      "time_of_day": "evening",
+      "continuity_props": [
+        "notebook",
+        "blue bench"
+      ],
+      "subtitle_safe_zone": "bottom 20%",
+      "lip_sync_requirement": false,
+      "emotion_before": "reserved",
+      "emotion_after": "slightly warmer",
+      "reference_images": [
+        "references/female_lead_master.png",
+        "references/male_lead_master.png"
+      ],
+      "generated_visuals": []
+    }
+  ],
+  "state_after": {
+    "relationship": "met_once",
+    "known_facts": [
+      "female carries a notebook",
+      "male checks train board"
+    ],
+    "weather": "rain",
+    "contact_exchanged": false
+  }
+}
