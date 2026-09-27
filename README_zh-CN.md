@@ -1,8 +1,12 @@
-# 蓝白二次元知识短视频 Skill + MCP
+# anime-video-skill · 蓝白二次元视频 Skill + MCP
 
 这个仓库提供 Codex Agent Skill、本地 MCP 服务和离线可重复的**策划流程**。输入已收录的主题，会输出带来源的 claims、中文脚本、60 秒分镜、成本占位和明确标为待完成的 QA 报告。原创言情系列提供双人物母版、三章日语对白、逐句对应中文字幕、120 秒分镜及连续性/文本去重检查。
 
-**当前没有可发布的成片。** 图像生成、配音、原创音乐、Remotion 实际合成、ffprobe 与人物一致性验收尚未接通。`quality=final` 会停在发布门槛，不会伪造 `final.mp4`。已实现的 Remotion 文件是 1080×1920、30 fps 的合成契约和最小画面示例，尚未接入 Python 工作流。现阶段唯一可实际跑通的是离线策划路径。
+**输出格式固定为 1080p、30fps。** 默认竖屏 1080×1920（9:16）；用户要求横屏时为 1920×1080（16:9）。MP4 / H.264 / yuv420p / AAC 48kHz 双声道。言情章节目标 120 秒，即 3600 帧。
+
+新增可运行的本地成片路径：`scripts/render_motion_film.py`。输入已生成并验收的角色参考图条件化场景、原创分镜和日中对白，可实际生成日语配音、中文字幕、原创合成配乐、雨声、慢速镜头与独立雨滴动画，再导出字幕版和无字幕版 MP4，并执行 ffprobe 与解码检查。完整例子是《雨》第一章《初遇》：`examples/rain/ch001.json`。它是动态插画短片，没有口型同步或逐帧角色肢体动画。详见 [成片制作说明](docs/motion-film.md)。
+
+原来的 `anime-video` / MCP 接口仍是策划路径，`quality=final` 仍会停在尚未接通的 provider 门槛。Remotion 是合成示例；新成片脚本使用 OpenCV/Pillow + FFmpeg，不依赖 Remotion。
 
 ## 安装
 
@@ -54,7 +58,7 @@ args = ["-m", "anime_knowledge_video.server"]
 
 ## Provider 与配置
 
-目前实际可用的是本地示例 source pack 和两张人物参考图。MCP Python SDK 是运行依赖；Remotion 在 `remotion/`，尚未安装和接通。`.env.example` 给出未来 provider 变量，但填 key **不会**自动启用尚未实现的 adapter。需要补齐图像、TTS、音乐、研究和渲染适配器，再经过字幕语义、事实、角色、音频、黑帧、ffprobe 与 contact sheet QA，才可生成最终文件。
+本地成片脚本使用 macOS 系统日语语音、程序原创声音和 FFmpeg；图像通过可用的图像生成工具另行生成。详见成片说明。MCP Python SDK 是可选运行依赖；Remotion 在 `remotion/`，仍未接入。`.env.example` 的未来 provider 变量不会自动启用尚未实现的 MCP adapter。主观画面和语言检查必须如实标记为 Agent 检查或待人工检查。
 
 ## 目录与上游
 
@@ -72,4 +76,4 @@ args = ["-m", "anime_knowledge_video.server"]
 - `No source pack`：为新主题准备并核验研究包；候选 brief 本身不足以生成脚本。
 - MCP 客户端连接失败：确认指向安装本包的 Python 环境；无 SDK 时最小 stdio MCP 实现只支持 initialize、tools/list、tools/call。
 - `duration must be ...`：知识视频限 55–65 秒；言情章限 115–125 秒。
-- `GATE: Final requires ...`：此版本只有策划流程，这是预期的发布保护。
+- `GATE: Final requires ...`：原 MCP/CLI 策划路径的发布保护；已准备媒体时按 `docs/motion-film.md` 使用独立渲染器。
