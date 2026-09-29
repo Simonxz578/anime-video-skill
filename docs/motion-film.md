@@ -1,5 +1,7 @@
 # 1080p / 30fps 动态插画成片
 
+> 本文描述早期基础渲染器。当前《雨》续作请使用 [v3 本地声音](local-voice.md) 和 [生产流程](production-workflows.md)，不要回退到旧系统语音。
+
 仓库：[Simonxz578/anime-video-skill](https://github.com/Simonxz578/anime-video-skill)。
 
 ## 安装依赖

@@ -1,0 +1,154 @@
+{
+  "recorded_at": "2026-09-28",
+  "runtimes": {
+    "hyperframes": "0.8.81",
+    "gsap": "3.14.2",
+    "voicevox_core": "0.17.0"
+  },
+  "repositories": [
+    {
+      "repository": "heygen-com/hyperframes",
+      "commit": "bee6a8e17d9198e734907b06e2c6f167529893e3",
+      "skills": [
+        {
+          "path": "skills/hyperframes",
+          "install_name": "hyperframes"
+        },
+        {
+          "path": "skills/hyperframes-core",
+          "install_name": "hyperframes-core"
+        },
+        {
+          "path": "skills/hyperframes-animation",
+          "install_name": "hyperframes-animation"
+        },
+        {
+          "path": "skills/hyperframes-cli",
+          "install_name": "hyperframes-cli"
+        },
+        {
+          "path": "skills/hyperframes-audio",
+          "install_name": "hyperframes-audio"
+        },
+        {
+          "path": "skills/general-video",
+          "install_name": "general-video"
+        },
+        {
+          "path": "skills/hyperframes-creative",
+          "install_name": "hyperframes-creative"
+        },
+        {
+          "path": "skills/media-use",
+          "install_name": "media-use"
+        }
+      ]
+    },
+    {
+      "repository": "browser-use/video-use",
+      "commit": "b877063835e6ea6e457124da7e28a0ae26691dc3",
+      "skills": [
+        {
+          "path": ".",
+          "install_name": "video-use"
+        }
+      ]
+    },
+    {
+      "repository": "remotion-dev/skills",
+      "commit": "cf49eff5d4463b33966b6618c83f7295797dd028",
+      "skills": [
+        {
+          "path": "skills/remotion-best-practices",
+          "install_name": "remotion-best-practices"
+        },
+        {
+          "path": "skills/remotion-markup",
+          "install_name": "remotion-markup"
+        },
+        {
+          "path": "skills/remotion-render",
+          "install_name": "remotion-render"
+        },
+        {
+          "path": "skills/remotion-captions",
+          "install_name": "remotion-captions"
+        },
+        {
+          "path": "skills/remotion-multimedia",
+          "install_name": "remotion-multimedia"
+        }
+      ]
+    },
+    {
+      "repository": "calesthio/generative-media-skills",
+      "commit": "8c85352d5d75d4dcbe58480bd138e37b9742bab1",
+      "skills": [
+        {
+          "path": "skills/production/creative-direction/character-design-continuity",
+          "install_name": "character-design-continuity"
+        },
+        {
+          "path": "skills/production/creative-direction/cinematic-shot-direction",
+          "install_name": "cinematic-shot-direction"
+        },
+        {
+          "path": "skills/production/creative-direction/storyboard-previsualization",
+          "install_name": "storyboard-previsualization"
+        },
+        {
+          "path": "skills/production/audio-craft/music-supervision-scoring",
+          "install_name": "music-supervision-scoring"
+        },
+        {
+          "path": "skills/production/audio-craft/sound-design-foley",
+          "install_name": "sound-design-foley"
+        },
+        {
+          "path": "skills/production/governance-delivery/generated-media-qa",
+          "install_name": "generated-media-qa"
+        },
+        {
+          "path": "skills/production/runtime-assembly/ffmpeg-media-finishing",
+          "install_name": "ffmpeg-media-finishing"
+        },
+        {
+          "path": "skills/providers/video-generation/seedance-2-0",
+          "install_name": "seedance-2-0"
+        }
+      ]
+    },
+    {
+      "repository": "Agentchengfeng/chengfeng-videocut-skills",
+      "commit": "a33b43e08c34fa8beeb5e78498e852f4e80975a5",
+      "skills": [
+        {
+          "path": "plugins/chengfeng-videocut/skills/chengfeng-cut",
+          "install_name": "chengfeng-cut"
+        },
+        {
+          "path": "plugins/chengfeng-videocut/skills/chengfeng-subtitle",
+          "install_name": "chengfeng-subtitle"
+        },
+        {
+          "path": "plugins/chengfeng-videocut/skills/chengfeng-visual",
+          "install_name": "chengfeng-visual"
+        },
+        {
+          "path": "plugins/chengfeng-videocut/skills/chengfeng-export",
+          "install_name": "chengfeng-export"
+        }
+      ]
+    },
+    {
+      "repository": "dexhunter/seedance2-skill",
+      "commit": "516284d5bab58361bfdfed3cc96cee3e837d4c44",
+      "skills": [
+        {
+          "path": "zh",
+          "install_name": "seedance2-prompt-zh"
+        }
+      ]
+    }
+  ]
+}

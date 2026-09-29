@@ -6,6 +6,8 @@ import sys
 from .contracts import GateError
 from .episode import create_episode
 from .io import ROOT, slug
+from .local_video import LocalVideoProvider
+from .local_voice import health as voice_health, synthesize as synthesize_voice
 from .research import load_pack
 from .romance.workflow import create_chapter, create_series
 from .storyboard import build_storyboard
@@ -20,6 +22,11 @@ def strings(*names: str) -> dict:
 
 
 TOOLS = [
+    {"name": "local_voice_health", "description": "Check local VOICEVOX and Rain voice presets.", "inputSchema": schema([], {})},
+    {"name": "synthesize_local_voice", "description": "Create Japanese WAV with fixed female/male voice; no cloud fallback or time stretching.", "inputSchema": schema(["text", "speaker"], {**strings("text", "output_dir"), "speaker": {"type": "string", "enum": ["female", "male"]}, "max_duration_sec": {"type": "number", "exclusiveMinimum": 0, "maximum": 600}})},
+    {"name": "local_video_health", "description": "Check loopback-only ComfyUI; no cloud fallback.", "inputSchema": schema([], {})},
+    {"name": "submit_local_video", "description": "Submit one approved local API workflow. Animation QA remains pending.", "inputSchema": schema(["workflow"], {"workflow": {"type": "object"}})},
+    {"name": "local_video_status", "description": "Read local ComfyUI job status.", "inputSchema": schema(["prompt_id"], strings("prompt_id"))},
     {"name": "create_episode", "description": "Plan a cited 60-second episode; final release is gated.", "inputSchema": schema(["topic"], {**strings("topic", "series", "quality", "research_pack"), "duration_sec": {"type": "integer"}})},
     {"name": "research_episode", "description": "Read a cited local source pack.", "inputSchema": schema(["topic"], strings("topic", "research_pack"))},
     {"name": "write_script", "description": "Return a curated example script.", "inputSchema": schema(["topic"], strings("topic", "research_pack"))},
@@ -32,6 +39,16 @@ TOOLS = [
 
 
 def call_tool(name: str, args: dict) -> object:
+    if name == "local_voice_health":
+        return voice_health()
+    if name == "synthesize_local_voice":
+        return synthesize_voice(**args)
+    if name == "local_video_health":
+        return LocalVideoProvider().health()
+    if name == "submit_local_video":
+        return LocalVideoProvider().submit(args["workflow"])
+    if name == "local_video_status":
+        return LocalVideoProvider().status(args["prompt_id"])
     if name == "create_episode":
         return create_episode(**args)
     if name in {"research_episode", "write_script", "build_storyboard"}:
@@ -68,7 +85,7 @@ def handle(message: dict) -> dict | None:
         if method == "initialize":
             result = {"protocolVersion": message.get("params", {}).get("protocolVersion", "2025-03-26"),
                       "capabilities": {"tools": {}},
-                      "serverInfo": {"name": "anime-knowledge-video", "version": "0.1.0"}}
+                      "serverInfo": {"name": "anime-knowledge-video", "version": "0.3.0"}}
         elif method == "ping":
             result = {}
         elif method == "tools/list":
@@ -81,7 +98,7 @@ def handle(message: dict) -> dict | None:
             return {"jsonrpc": "2.0", "id": request_id,
                     "error": {"code": -32601, "message": f"method not found: {method}"}}
         return {"jsonrpc": "2.0", "id": request_id, "result": result}
-    except (GateError, KeyError, TypeError) as exc:
+    except (GateError, KeyError, TypeError, ValueError, OSError, RuntimeError) as exc:
         return {"jsonrpc": "2.0", "id": request_id, "result":
                 {"content": [{"type": "text", "text": str(exc)}], "isError": True}}
 

@@ -1,0 +1,29 @@
+{
+  "voices": {
+    "female": {
+      "style_id": 10,
+      "credit": "VOICEVOX:雨晴はう",
+      "pitch": 0.006,
+      "speed": 1.02,
+      "direction": "gentle, clear, youthful; soft endings, warm relief"
+    },
+    "male": {
+      "style_id": 11,
+      "credit": "VOICEVOX:玄野武宏",
+      "pitch": 0.0,
+      "speed": 0.94,
+      "direction": "clear young adult, restrained warmth, curious rising questions",
+      "intonation": 1.0,
+      "pause_max_seconds": 0.15,
+      "native_sample_rate": 24000,
+      "postprocess": "64-tap SWR resampling, gentle EQ; no time stretch or pitch shift"
+    }
+  },
+  "count": 22,
+  "celebrity_clone": false,
+  "local_only": true,
+  "all_previous_system_voices_replaced": true,
+  "revision": "male_voice_v3",
+  "female_source": "refined/audio/*.wav, byte-for-byte copied",
+  "male_lines_regenerated": 11
+}

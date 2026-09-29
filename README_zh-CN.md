@@ -2,11 +2,19 @@
 
 这个仓库提供 Codex Agent Skill、本地 MCP 服务和离线可重复的**策划流程**。输入已收录的主题，会输出带来源的 claims、中文脚本、60 秒分镜、成本占位和明确标为待完成的 QA 报告。原创言情系列提供双人物母版、三章日语对白、逐句对应中文字幕、120 秒分镜及连续性/文本去重检查。
 
-**输出格式固定为 1080p、30fps。** 默认竖屏 1080×1920（9:16）；用户要求横屏时为 1920×1080（16:9）。MP4 / H.264 / yuv420p / AAC 48kHz 双声道。言情章节目标 120 秒，即 3600 帧。
+**默认输出格式为 1080p、30fps；明确的场景规格优先。** 默认竖屏 1080×1920（9:16）；用户要求横屏时为 1920×1080（16:9）。MP4 / H.264 / yuv420p / AAC 48kHz 双声道。言情章节目标 120 秒，即 3600 帧。
 
-新增可运行的本地成片路径：`scripts/render_motion_film.py`。输入已生成并验收的角色参考图条件化场景、原创分镜和日中对白，可实际生成日语配音、中文字幕、原创合成配乐、雨声、慢速镜头与独立雨滴动画，再导出字幕版和无字幕版 MP4，并执行 ffprobe 与解码检查。完整例子是《雨》第一章《初遇》：`examples/rain/ch001.json`。它是动态插画短片，没有口型同步或逐帧角色肢体动画。详见 [成片制作说明](docs/motion-film.md)。
+## 当前制作能力（0.3.0）
 
-原来的 `anime-video` / MCP 接口仍是策划路径，`quality=final` 仍会停在尚未接通的 provider 门槛。Remotion 是合成示例；新成片脚本使用 OpenCV/Pillow + FFmpeg，不依赖 Remotion。
+- **本地日语双声线：** VOICEVOX Core 0.17.0；夏帆 Style 10，湊 Style 11。男声 v3 已恢复原生音高、修整停顿，不做语音时间拉伸。新增 `anime-video-voice`、`local_voice_health`、`synthesize_local_voice`。
+- **第一幕精修：** 120秒《雨》·《初见》，31段连续运动转场，男声独立修复，女声保持一致，中文字幕重新对齐。
+- **30秒雨后合影母版：** 11张关键帧、HyperFrames/GSAP 时间轴、原创配乐与拟音、无字幕母版及中文字幕预览、900帧编码和音轨一致性检查。此用户指定场景使用 **720×1280**。
+- **LOCAL_VIDEO_PROVIDER：** ComfyUI 本地提交与查询已接入 CLI/MCP。Wan 5B CPU/MPS 对照尚未通过人物动画验收；14B首尾帧和LTX-2.5仍未实测，不自动批量生产。
+- **六套上游 Skill：** 固定 commit、所用模块和安装路径已记录；方法参考与真正运行的引擎分别注明。
+
+制作入口见 [生产流程](docs/production-workflows.md)、[本地配音](docs/local-voice.md)、[本地视频](docs/local-video-provider.md)、[六 Skill 记录](docs/upstream-skills.md) 和 [日后续作约定](docs/rain-production-preferences.md)。生成的图像、视频、语音和模型均保留在本地 `outputs/`，仓库提供代码与文本示例。
+
+当前成片属于插画导演动画 / 混剪，没有连续人体生成动作或口型同步。原策划工具返回的 `planning_only` 及整项目媒体占位接口仍保留；新增逐句配音及本地视频工具可实际调用。
 
 ## 安装
 
@@ -58,7 +66,7 @@ args = ["-m", "anime_knowledge_video.server"]
 
 ## Provider 与配置
 
-本地成片脚本使用 macOS 系统日语语音、程序原创声音和 FFmpeg；图像通过可用的图像生成工具另行生成。详见成片说明。MCP Python SDK 是可选运行依赖；Remotion 在 `remotion/`，仍未接入。`.env.example` 的未来 provider 变量不会自动启用尚未实现的 MCP adapter。主观画面和语言检查必须如实标记为 Agent 检查或待人工检查。
+当前配音使用本地 VOICEVOX，音乐/拟音由脚本原创合成，图像通过可用的图像生成工具另行生成；早期基础渲染器的系统语音仅用于历史版本复现。详见成片说明。MCP Python SDK 是可选运行依赖；Remotion 在 `remotion/`，仍未接入。`.env.example` 的未来 provider 变量不会自动启用尚未实现的 MCP adapter。主观画面和语言检查必须如实标记为 Agent 检查或待人工检查。
 
 ## 目录与上游
 

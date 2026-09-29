@@ -1,0 +1,19 @@
+{
+  "roundtrip_decode_device_difference": {
+    "mean_absolute_error": 7.940168416098459e-07,
+    "max_absolute_error": 2.2709369659423828e-05
+  },
+  "cpu_decode_device_difference": {
+    "mean_absolute_error": 4.271954878731776e-07,
+    "max_absolute_error": 1.5795230865478516e-05
+  },
+  "mps_decode_device_difference": {
+    "mean_absolute_error": 4.513189253430028e-07,
+    "max_absolute_error": 1.8209218978881836e-05
+  },
+  "sampler_device_difference": {
+    "relative_rms": 0.7093063592910767,
+    "mean_absolute_error": 0.4734009802341461
+  },
+  "conclusion": "Both samplers produce corrupt frames under the same tiny test; identical latents decode nearly identically on CPU/MPS; reference VAE roundtrip is visually recognizable. This localizes failure upstream of decoding in this test, but does not identify the exact model/configuration defect or prove every resolution fails on CPU."
+}

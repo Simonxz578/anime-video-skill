@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "anime-knowledge-video-mcp"
-version = "0.2.0"
-description = "Reference-locked anime knowledge video and romance chapter planning with MCP"
+version = "0.3.0"
+description = "Anime production planning, local voice, video workflows and MCP"
 readme = "README.md"
 requires-python = ">=3.10"
 license = {text = "MIT"}
@@ -19,6 +19,8 @@ render = ["numpy>=1.26", "Pillow>=10", "opencv-python>=4.8"]
 [project.scripts]
 anime-video = "anime_knowledge_video.cli:main"
 anime-video-mcp = "anime_knowledge_video.server:main"
+anime-video-voice = "anime_knowledge_video.local_voice:main"
+anime-video-local = "anime_knowledge_video.local_video:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]

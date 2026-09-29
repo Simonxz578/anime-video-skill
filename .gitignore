@@ -13,3 +13,11 @@ outputs/
 *.mid
 *.log
 
+
+.env.*
+!.env.example
+.DS_Store
+*.vvm
+*.gguf
+*.safetensors
+*.onnx

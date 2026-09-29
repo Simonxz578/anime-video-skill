@@ -3,6 +3,8 @@
 from .contracts import GateError
 from .episode import create_episode as plan_episode
 from .io import ROOT, slug
+from .local_video import LocalVideoProvider
+from .local_voice import health as voice_health, synthesize as synthesize_voice
 from .research import load_pack
 from .romance.workflow import create_chapter, create_series
 from .storyboard import build_storyboard
@@ -17,6 +19,33 @@ def create_server():
     if FastMCP is None:
         raise RuntimeError("Install the MCP extra: python -m pip install -e '.[mcp]'")
     mcp = FastMCP("anime-knowledge-video")
+
+    @mcp.tool()
+    def local_voice_health() -> dict:
+        """Check the optional local VOICEVOX runtime and locked Rain voice presets."""
+        return voice_health()
+
+    @mcp.tool()
+    def synthesize_local_voice(text: str, speaker: str,
+                               output_dir: str = "outputs/local-voice",
+                               max_duration_sec: float | None = None) -> dict:
+        """Create credited Japanese WAV speech; female or male, no cloud fallback."""
+        return synthesize_voice(text, speaker, output_dir, max_duration_sec)
+
+    @mcp.tool()
+    def local_video_health() -> dict:
+        """Check the loopback-only ComfyUI provider. Never route to a cloud API."""
+        return LocalVideoProvider().health()
+
+    @mcp.tool()
+    def submit_local_video(workflow: dict) -> dict:
+        """Submit one approved API graph; completion does not imply animation QA passed."""
+        return LocalVideoProvider().submit(workflow)
+
+    @mcp.tool()
+    def local_video_status(prompt_id: str) -> dict:
+        """Read the local job result without submitting another generation."""
+        return LocalVideoProvider().status(prompt_id)
 
     @mcp.tool()
     def create_episode(topic: str, series: str = "cosmos", language: str = "zh-CN",
@@ -57,7 +86,7 @@ def create_server():
     @mcp.tool()
     def generate_voice(project_dir: str) -> dict:
         """Report availability of fixed-voice narration."""
-        return {"status": "blocking_missing", "reason": "No TTS provider configured", "project_dir": project_dir}
+        return {"status": "blocking_missing", "reason": "Project-wide voice adapter is not connected; use synthesize_local_voice for Japanese dialogue", "project_dir": project_dir}
 
     @mcp.tool()
     def generate_music(project_dir: str) -> dict:
